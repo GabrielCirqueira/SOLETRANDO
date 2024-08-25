@@ -1,10 +1,49 @@
 html,
 body {
   height: 100%;
+  background-color: #f0f0f0;
+}
+
+.background-item {
+  position: absolute;
+  opacity: 0.2;
+  font-size: 1rem; /* Tamanho dos ícones */
+  pointer-events: none; /* Garante que os ícones não interfiram com eventos de clique */
+}
+
+header {
+  background-color: #23a053;
+  padding: 10px 0;
+  height: 100px;
+  text-align: center; 
+  color: white;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 30px; 
+  font-weight: bold; 
+  letter-spacing: 2px; 
+}
+
+header p {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-top: 5px;
+  letter-spacing: 1px;
+}
+
+.bottom-header{
+  background-color: #1a8944;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.32);
+  height: 9px;
 }
 
 .container {
   max-width: 800px;
+  min-width: 300px;
+  margin-top: 100px;
   background-color: #ffffff;
   padding: 20px;
   border-radius: 10px;
@@ -14,13 +53,16 @@ body {
 .form-signin p {
   line-height: 2;
   margin-bottom: 20px;
+  font-size: 15px;
 }
 
 input[type="text"] {
   width: auto;
   display: inline-block;
   margin-left: 5px;
+  color: rgb(33, 33, 33) ;
   border-radius: 0px;
+  text-align: center;
   height: 30px;
   border: none;
   border-bottom: 1px solid rgb(114, 114, 114);
