@@ -50,7 +50,7 @@ class ProcessarController extends AbstractController
                 $acertos++;
                 $resultado[$key] = [
                     "status" => "Acertou",
-                    "palavra" => $palavra_correta
+                    "palavra_digitada" => $palavra_correta
                 ];
                 $palavras_acertadas[] = $palavras_recebidas[$key];
             } else {
@@ -71,8 +71,8 @@ class ProcessarController extends AbstractController
             'total_palavras' => $total_palavras,
             'acertos' => $acertos,
             'erros' => $erros,
-            'porcentagem_acertos' => $porcentagem_acertos,
-            'porcentagem_erros' => $porcentagem_erros,
+            'porcentagem_acertos' => number_format($porcentagem_acertos,1),
+            'porcentagem_erros' => number_format($porcentagem_erros,1),
             'resultado' => $resultado,
             'status_geral' => $porcentagem_acertos >= 50 ? 'bom' : 'ruim', 
         ];

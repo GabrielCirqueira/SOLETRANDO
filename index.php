@@ -1,4 +1,6 @@
 <?php
+session_start();
+ 
 
 require_once 'vendor/autoload.php';
 require_once 'public/routes.php';
@@ -8,8 +10,10 @@ $uri = rtrim($uri, '/');
 
 $uri = str_replace("/SOLETRANDO","",$uri);
 
+$action = isset($_GET["route"]) ? $_GET["route"] : "home";
+
 foreach ($router['routes'] as $route => $controller) {
-    if ($uri === $route) {
+    if ($action === $route) {
         $controller = new $controller();
         $controller->index($_REQUEST);
         exit;

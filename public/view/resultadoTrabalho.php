@@ -31,12 +31,13 @@
                         $contador++; 
                         endforeach; ?>
 
-                    <div class="container mt-4">
-                            <div class="d-flex justify-content-between">
-                                <a href="home" class="btn btn-primary">Tentar Novamente</a>
-                                <a href="trabalho" class="btn btn-secondary">Prosseguir</a>
+                        <div class="">
+                                    <center>
+
+                                    <a style="margin-bottom: 10px;" href="home" class="btn btn-primary">Tentar Novamente 1º redação</a> <br>
+                                    <a href="trabalho" class="btn btn-secondary">Tentar Novamente 2º redação</a>
+                                    </center>
                             </div>
-                        </div>
                     </div>
                 </div>
             </div>
